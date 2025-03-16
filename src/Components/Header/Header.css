@@ -1,0 +1,13 @@
+.home{
+    margin-left: -12px;
+    font-size: 20px;
+}
+.left-header{
+    font-weight: bold;
+}
+
+.left-header a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

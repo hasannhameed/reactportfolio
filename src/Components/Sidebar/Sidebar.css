@@ -1,0 +1,92 @@
+.min-vh-80 {
+    min-height: 80vh !important;
+  }
+  
+  .profile{
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-image: url('../../assets/dev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+  }
+  .profile-container {
+    height: 50px;
+    display: flex;
+    align-items: start; 
+    gap: 15px; 
+    position: relative;
+  }
+
+ 
+  .profile-image {
+    top: -3rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    left: -1rem;
+  }
+  .faicon{
+    padding: 6px 8px !important;
+    background-color: aliceblue;
+  }
+
+  
+  .profile-container::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 8px;
+    width: 2px;
+    height: 63px;
+    background-color: grey;
+    transform: translateX(-50%);
+  }
+
+  
+  .dot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+  }
+
+
+  .dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(var(--bs-warning-rgb), 1) !important;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .dot::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 30px; 
+    background-color: grey;
+    transform: translateX(-50%);
+  }
+
+
+  .dot-container p:last-child .dot::after {
+    display: none;
+  }
